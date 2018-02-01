@@ -1,1 +1,5 @@
-#emacs-notes
+#My notes on Emacs
+
+Contents:
+---------
+ * [Packages](packages.md)
