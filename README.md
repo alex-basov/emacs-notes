@@ -1,5 +1,7 @@
-#My notes on Emacs
+#Notes about Emacs
+Info on how to use Emacs found on the Internet
 
 Contents:
 ---------
- * [Packages](packages.md)
+* [Hotkeys](emacs_hotkeys.md)
+* [Packages](packages.md)
