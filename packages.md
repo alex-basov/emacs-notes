@@ -7,21 +7,18 @@ a "package" so that Emacs can color-code it for example. Or even write a package
 Emacs to auto-complete keywords in this language. This makes Emacs a platform for editing
 many different things. 
 
-~/.emacs file (A file called ".emacs" under your home directory) holds all the elisp
+`~/.emacs` file (A file called ".emacs" under your home directory) holds all the elisp
 statements that is run when you start your Emacs. 
--~/.emacs.d directory (A directory called ".emacs.d" under your home directory) holds
+`~/.emacs.d` directory (A directory called ".emacs.d" under your home directory) holds
 all the packages (files of lisp commands/statements) for Emacs.
 
 You load a package by refering it in a "require" statement. 
 
-For this example, I already have downloaded a package called "auto-complete" and put it
-under ~/.emacs.d. I will now add a line in ~/.emacs file so that it will start every time.
-Let's first test it.
-whi?? no autocomplete
-
+For this example, we have already downloaded a package called "auto-complete" and put it
+under `~/.emacs.d.` Now let's add a line in `~/.emacs` file so that it will start every time.
 
 Auto complete
-=============
+-------------
 
 for auto complete works once we add these two lines to our ~/.emacs file
 ```
@@ -31,7 +28,7 @@ for auto complete works once we add these two lines to our ~/.emacs file
 
 And then, we save .emacs file, and restart Emacs. auto-complete should be on for everything.
 
-We can also add the following line to ~/.emacs file so that C-c j becomes M-x goto-line each
+We can also add the following line to `~/.emacs` file so that C-c j becomes M-x goto-line each
 time Emacs starts:
 
 ```
