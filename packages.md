@@ -40,9 +40,28 @@ time Emacs starts:
 
 For your reference, M-x goto-line goes to a line!
 
+Recent Files
+------------
+Recentf is a minor mode that builds a list of recently opened files. It is saved
+automatically on exiting Emacs.
+
+```
+(recentf-mode 1)
+(setq recent-max-menu-items 25)
+(global-set-key "\C-x\ \C-r" 'recentf-open-files)
+```
+
+Modes
+=====
+
+Markdown-mode
+-------------
+You need MELPA Stable installed
+
+`M-x package-install RET markdown-mode RET`
 
 Impatient Mode
-==============
+--------------
 See the effect of your HTML as you type it.
  * [YouTube demo](http://youtu.be/QV6XVyXjBO8)
  * [Readme](https://github.com/skeeto/impatient-mode)
