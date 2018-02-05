@@ -5,7 +5,7 @@ Emacs is very versatile, you can program it, and add new abilities. Let's say th
 develop a new language that Emacs does not know about. All we have to do is to write
 a "package" so that Emacs can color-code it for example. Or even write a package for
 Emacs to auto-complete keywords in this language. This makes Emacs a platform for editing
-many different things. 
+many different thingsa. 
 
 `~/.emacs` file (A file called ".emacs" under your home directory) holds all the elisp
 statements that is run when you start your Emacs. 
