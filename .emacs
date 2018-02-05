@@ -6,14 +6,22 @@
 
 (package-initialize)
 
-;; Loadauto-complete package
-(require 'auto-complete)
 
+;; Enable recent files
+(recentf-mode 1)
+(setq recent-max-menu-items 25)
+(global-set-key "\C-x\ \C-r" 'recentf-open-files)
+
+;; install auto-complete package first
+;; Loadauto-complete package
+(ac-config-default)
+(require 'auto-complete)
 ;; Start auto-complete
 (global-auto-complete-mode t)
 
-;; Set a global hot-key for goto-line
-(global-set-key (kbd "C-c l") 'goto-line)
 
-;; impatient mode
+;; install emmet-mode first
+(add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
+(add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
+
 

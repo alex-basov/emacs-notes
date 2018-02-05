@@ -7,23 +7,31 @@ a "package" so that Emacs can color-code it for example. Or even write a package
 Emacs to auto-complete keywords in this language. This makes Emacs a platform for editing
 many different things. 
 
-~/.emacs file (A file called ".emacs" under your home directory) holds all the elisp
+`~/.emacs` file (A file called ".emacs" under your home directory) holds all the elisp
 statements that is run when you start your Emacs. 
--~/.emacs.d directory (A directory called ".emacs.d" under your home directory) holds
+`~/.emacs.d` directory (A directory called ".emacs.d" under your home directory) holds
 all the packages (files of lisp commands/statements) for Emacs.
 
 You load a package by refering it in a "require" statement. 
 
 For this example, I already have downloaded a package called "auto-complete" and put it
-under ~/.emacs.d. I will now add a line in ~/.emacs file so that it will start every time.
+under `~/.emacs.d`. I will now add a line in `~/.emacs` file so that it will start every time.
 Let's first test it.
 whi?? no autocomplete
 
 
 Auto complete
 =============
+[Auto-complete link](https://github.com/auto-complete/auto-complete)
 
-for auto complete works once we add these two lines to our ~/.emacs file
+Auto-complete is available on MELPA and MELPA-STABLE
+
+Install auto-complete with the following command.
+
+`M-x package-install [RET] auto-complete [RET]`
+
+For auto complete works once we add these two lines to our ~/.emacs file
+
 ```
 (require 'auto-complete)
     (global-auto-complete-mode t)
@@ -60,6 +68,7 @@ You need MELPA Stable installed
 
 `M-x package-install RET markdown-mode RET`
 
+
 Impatient Mode
 --------------
 See the effect of your HTML as you type it.
@@ -74,11 +83,10 @@ See the effect of your HTML as you type it.
 ```
 
 Using _impatient-mode_
-----------------------
 
 Enable the web server provided by _simple-httpd_:
 
-```el
+```
 M-x httpd-start
 ```
 
@@ -87,3 +95,23 @@ Publish buffers by enabling the minor mode `impatient-mode`.
 ```
 M-x impatient-mode
 ```
+
+Emmet-mode
+----------
+[emmet-mode link](https://github.com/smihica/emmet-mode)
+
+Install from MELPA:
+
+`M-x package-list-packages` search for `emmet-mode`
+
+To add it to auto-load on your sgml modes:
+
+```
+(add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
+(add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
+```
+
+
+
+
+
