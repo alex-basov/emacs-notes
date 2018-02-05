@@ -100,3 +100,16 @@ With `C-h v`, you can see the value of a variable.
 You can also use `C-x C-e` to evaluate (i.e. run) a lisp statement at the cursor.
 (setq your_var '124)
 your_var my_var
+
+Dired
+-----
+run Dired `C-x d`
+quit Dired `q`
+
+### Immediate Actions on Files
+
+visit current file `f`
+view current file `v`
+visit current file in other window `o`
+create a new subdirectory `+`
+compare file at point with the one at mark `=`

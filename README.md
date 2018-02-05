@@ -5,3 +5,4 @@ Contents:
 ---------
 * [Hotkeys](emacs_hotkeys.md)
 * [Packages](packages.md)
+* [Themes](themes.md)

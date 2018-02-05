@@ -22,8 +22,8 @@ Install auto-complete with the following command.
 
 `M-x package-install [RET] auto-complete [RET]`
 
-For auto complete works once we add these two lines to our ~/.emacs file
-=======
+For auto complete works once we add these two lines to our `~/.emacs` file
+
 For this example, we have already downloaded a package called "auto-complete" and put it
 under `~/.emacs.d.` Now let's add a line in `~/.emacs` file so that it will start every time.
 
@@ -109,7 +109,34 @@ To add it to auto-load on your sgml modes:
 (add-hook 'css-mode-hook  'emmet-mode) ;; enable Emmet's css abbreviation.
 ```
 
+Ivy
+---
+[Ivy on GitHub](https://github.com/abo-abo/swiper)
+[Ivy User manual](http://oremacs.com/swiper/)
 
+A generic completion mechanism for Emacs
 
+Install it: `M-x package-install RET ivy RET`
 
+Enable it: `M-x ivy-mode`
+
+Swiper
+------
+Swiper helps you search through emacs, and shows you text around the matching terms.
+
+Install Swiper (via Melpa): `M-x package-install RET swiper RET`
+
+Add the following to your .emacs file to prepare swiper and Ivy:
+```
+(ivy-mode 1)
+(global-set-key "\C-s" 'swiper)
+```
+
+Counsel
+-------
+Counsel, a collection of Ivy-enhanced versions of common Emacs commands.
+
+Install Counsel (via Melpa): `M-x package-install RET counsel RET`
+
+Run `M-x counsel-find-file`
 
