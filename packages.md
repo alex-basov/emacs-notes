@@ -14,14 +14,6 @@ all the packages (files of lisp commands/statements) for Emacs.
 
 You load a package by refering it in a "require" statement. 
 
-For this example, I already have downloaded a package called "auto-complete" and put it
-under `~/.emacs.d`. I will now add a line in `~/.emacs` file so that it will start every time.
-Let's first test it.
-whi?? no autocomplete
-
-
-Auto complete
-=============
 [Auto-complete link](https://github.com/auto-complete/auto-complete)
 
 Auto-complete is available on MELPA and MELPA-STABLE
@@ -31,6 +23,12 @@ Install auto-complete with the following command.
 `M-x package-install [RET] auto-complete [RET]`
 
 For auto complete works once we add these two lines to our ~/.emacs file
+=======
+For this example, we have already downloaded a package called "auto-complete" and put it
+under `~/.emacs.d.` Now let's add a line in `~/.emacs` file so that it will start every time.
+
+Auto complete
+-------------
 
 ```
 (require 'auto-complete)
@@ -39,7 +37,7 @@ For auto complete works once we add these two lines to our ~/.emacs file
 
 And then, we save .emacs file, and restart Emacs. auto-complete should be on for everything.
 
-We can also add the following line to ~/.emacs file so that C-c j becomes M-x goto-line each
+We can also add the following line to `~/.emacs` file so that C-c j becomes M-x goto-line each
 time Emacs starts:
 
 ```
