@@ -1,6 +1,3 @@
-Based on Baris Yuskel tutorial
-
-
 Commands:
 --------------
 `C-x C-f` : Opens a file, asks for the file name. If it cannot find the file, creates the file
@@ -19,12 +16,14 @@ If you quit Emacs without saving, you can see this auto-save file. Let's do that
 
 Copy/Cut/Paste Commands:
 ------------------------
-`C-y`     : Pastes whatever is in the clipboard at the cursor.
-          Subsequent C-y's will keep on pasting.
-`C-space` : Starts marking/highligting a region.
-`C-k`     : Kills/deletes the whole line, puts it into the clipboard.
-`M-w`     : Copies this region into the clipboard.
-`C-w`     : Cuts this region into the clipboard (deletes the region and copies it to clipbrd)
+Pastes whatever is in the clipboard at the cursor. 
+Subsequent `C-y`'s will keep on pasting                    `C-y`
+Starts marking/highligting a region                        `C-space`
+Kills/deletes the whole line, puts it into the clipboard   `C-k`
+Kills the whole line. The same as `M-x kill-whole-line`  `C-S-Backspace`
+Copies this region into the clipboard                      `M-w`
+Cuts this region into the clipboard 
+(deletes the region and copies it to clipbrd)              `C-w`
 
 Saving a region involves hitting C-space to start selecting, and then hitting M-w or C-w to
 copy or cut it into the clipboard, and then hitting C-y to paste it. 
@@ -54,7 +53,7 @@ switch to.
 `C-x 1`   : Will leave only one window
 `C-x 2`   : Will make a horizontal cut and show a secondary window
 `C-x 3`   : Will make a vertical cut and show a secondary window
-
+nn
 Search Commands
 `C-s`	   : Searches forward as you type. Beware \n is not new line, it is C-j
 	     When you are within a search, C-s will find the next occurance.
@@ -100,16 +99,3 @@ With `C-h v`, you can see the value of a variable.
 You can also use `C-x C-e` to evaluate (i.e. run) a lisp statement at the cursor.
 (setq your_var '124)
 your_var my_var
-
-Dired
------
-run Dired `C-x d`
-quit Dired `q`
-
-### Immediate Actions on Files
-
-visit current file `f`
-view current file `v`
-visit current file in other window `o`
-create a new subdirectory `+`
-compare file at point with the one at mark `=`
